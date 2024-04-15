@@ -1,0 +1,151 @@
+:root {
+    --claro: #FFFFE9;
+    --verde: #114E38;
+    --verdeClaro: #DADFB9;
+    --amarilloVerde: #76A636;
+    --blanco: white;
+    --texto: 'Montserrat', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6 rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/*Estilos golbales*/
+
+h1,
+h2,
+h3 {
+    font-family: var(--texto);
+}
+
+p,
+a {
+    font-family: var(--texto);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.columna-1 {
+    width: 50%;
+    margin: 4rem;
+}
+
+.columna-1 h1 {
+    text-align: left;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--verde);
+}
+.columna-1 img{
+    margin-right: 28rem;
+    width: 30rem;
+    height: 25rem;
+}
+.columna button{
+    margin-right: 29rem;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 40%;
+    height: 3rem;
+    background-color: var(--verde);
+    color: var(--claro);
+}
+.columna-1 p{
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-top: 0.5rem;
+}
+.columna-1 input{
+    width: 80%;
+    margin-right: 18rem;
+    height: 3rem;
+}
+.columna-1, .columna button{
+    text-align: center;
+}
+.columna button:hover{
+    cursor: pointer;
+    background-color: var(--amarilloVerde);
+}
+.columna-2 {
+    width: 50%;
+
+}
+
+.columna-2{
+    text-align: center;
+    width: 50%;
+    margin: 4rem;
+}
+.columna-2 .logo{
+    margin-top: 7rem;
+    margin-bottom: 1rem;
+    width: 20rem;
+    height: 20rem;
+}
+.columna-2 h2{
+    font-size: 2.5rem;
+    color: var(--amarilloVerde);
+}
+.log p{
+    margin-left: 18.5rem;
+    font-size: 2rem;
+    color: var(--amarilloVerde);
+}
+
+.columna-2 p{
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-top: 0.5rem;
+}
+.columna-2 input{
+    width: 90%;
+    margin-right: 18rem;
+    height: 3rem;
+}
+img {
+    width: 100%;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+p {
+    margin: 10px 0;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 10px;
+}

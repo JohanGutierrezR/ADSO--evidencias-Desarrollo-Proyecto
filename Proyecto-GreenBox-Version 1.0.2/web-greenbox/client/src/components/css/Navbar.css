@@ -1,0 +1,83 @@
+/*Navbar*/
+.encabezado {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  
+  .encabezado {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .contenido-navegacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--verde);
+    box-shadow: 10px 10px 16px -6px var(--verdeClaro);
+    padding: 1rem; /* Añadido padding para separar el contenido del borde */
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 70px;
+    margin-right: 12px;
+    margin-left: 20px;
+  }
+  
+  .logo h2 {
+    font-size: 1.5rem;
+    color: var(--verdeClaro);
+    text-align: center;
+    margin-right: 10px;
+    font-weight: bold;
+    line-height: 1;
+  }
+  
+  .logo h2 span {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+  
+  
+  .logo span:hover {
+    color: var(--claro);
+  }
+  
+  .logo h2:hover {
+    color: var(--claro);
+  }
+  
+  .navegacion {
+    display: flex; /* Cambiado a flex para que los elementos se acomoden en fila */
+    align-items: center; /* Alineado verticalmente */
+    margin-right: 10px; /* Añadido margen derecho */
+  }
+  
+  .navegacion a {
+    font-size: 1rem; /* Aumentado tamaño de fuente */
+    padding: 1rem; /* Aumentado padding */
+    color: var(--verdeClaro);
+    text-decoration: none;
+    transition: background-color all 0.3s ease-in-out;
+    font-weight: bold; /* Texto en negrita */
+  }
+  
+  .navegacion a:hover {
+    color: var(--claro);
+    cursor: pointer;
+  }
+  
+ 
+  

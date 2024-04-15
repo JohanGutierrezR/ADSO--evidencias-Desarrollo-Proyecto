@@ -1,0 +1,216 @@
+:root {
+    --claro: #FFFFE9;
+    --verde: #114E38;
+    --verdeClaro: #DADFB9;
+    --amarilloVerde: #76A636;
+    --blanco: white;
+    --texto: 'Montserrat', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6 rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/*Estilos golbales*/
+
+h1,
+h2,
+h3 {
+    font-family: var(--texto);
+}
+
+p,
+a {
+    font-family: var(--texto);
+}
+
+.contenedor {
+    margin: 0 auto;
+    max-width: 120rem;
+    width: 95%;
+}
+
+/*Encabezado*/
+
+.encabezado {
+    background-color: var(--claro);
+    height: 100vh;
+    min-height: 70rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+;
+}
+
+
+.contenido-navegacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--verde);
+    box-shadow: 10px 10px 16px -6px var(--verdeClaro);
+    margin-bottom: 35rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+    margin-right: 12px;
+    margin-right: 10px;
+}
+
+.logo h2 {
+    font-size: 1.8rem;
+    color: var(--verdeClaro);
+    text-align: center;
+    margin-right: 10px;
+}
+
+.logo h2 span {
+    font-size: 1.3rem;
+}
+
+.logo input {
+    color: var(--verdeClaro);
+    font-size: 1.1rem;
+    border-radius: 5px;
+    color: var(--verde);
+    padding: 6.5px 80px;
+    margin-left: 5rem;
+    outline: 2px solid var(--verde);
+}
+
+input[type="submit"] {
+    background-color: var(--amarilloVerde);
+    border: none;
+    padding: 7px 20px;
+    margin: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+input[type="submit"]:hover {
+    background-color: var(--verdeClaro);
+}
+
+.navegacion a {
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    color: var(--verdeClaro);
+    text-decoration: none;
+    transition: background-color all .3s ease-in-out;
+}
+
+.navegacion a:hover {
+    background-color: var(--amarilloVerde);
+    color: var(--verdeClaro);
+
+}
+
+.contenido-encabezado {
+    text-align: center;
+}
+
+.contenido-encabezado {
+    background-size: cover;
+    background-position: center;
+    height: 13rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido-encabezado{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.texto-encabezado-izquierdo, .texto-encabezado-derecho{
+    flex: 0 0 calc(50%- 1rem);
+}
+/*Calificaciones encabezado*/
+
+.texto-encabezado-izquierdo h1{
+    font-size: 3rem;
+    text-align: center;
+    color: var(--verde); 
+}
+
+.texto-encabezado-izquierdo p{
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+    margin-top: 2rem;
+}
+
+.texto-encabezado-izquierdo canvas{
+    margin-top: 2rem;
+}
+.texto-encabezado-izquierdo, .titulo p{
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+.calificacion p{
+    color: var(--verde);
+    text-align: left;
+    margin-left: 2rem;
+}
+
+/*Derecha*/
+
+.texto-encabezado-derecho{
+    margin-right: 10rem;
+    
+}
+.texto-encabezado-derecho h2{
+    font-size: 3rem;
+    text-align: center;
+    color: var(--verde);
+    margin-bottom: 3rem;
+}
+
+.imge img {
+    width: 55rem;
+    height: 37rem;
+
+
+}
+
+
+.usuarios p{
+    font-size: 2rem;
+    color: var(--verde);
+    text-align: left;
+    margin-top: 1rem;
+}
+
+.comentario p{
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: black;
+}

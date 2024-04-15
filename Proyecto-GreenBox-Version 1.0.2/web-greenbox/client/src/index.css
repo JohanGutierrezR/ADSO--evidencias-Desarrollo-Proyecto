@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --claro: #FFFFE9;
+    --verde: #114E38;
+    --verdeClaro: #DADFB9;
+    --amarilloVerde: #76A636;
+    --blanco:white;
+    --texto: 'Montserrat', sans-serif;
+}
+
+
+body{
+    background-color: #FFFFE9;
+    color: #DADFB9;
+}

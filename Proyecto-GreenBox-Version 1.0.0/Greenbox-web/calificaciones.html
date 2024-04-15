@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://kit.fontawesome.com/37784cd451.js" crossorigin="anonymous"></script>
+    <title>GreenBox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;400;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/normalice.css" />
+    <link rel="stylesheet" href="./css/styles3.css" />
+    <link rel="shortcut icon" href="./img/favicon2.png" type="image/x-icon" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </head>
+    
+    <body>
+        <header>
+            <div class="contenido-navegacion">
+                <div class="logo">
+                    <a href="index.html"><img src="./img/Logo.png" alt="" /></a>
+                    <h2>GreenBox <br /><span>Te conecta con el campo</span></h2>
+                    <input type="text" id="buscar" placeholder="Busca tus productos" required />
+                    <a href="categorias.html"><input type="submit" value="Buscar" /></a>
+                </div>
+                <div class="navegacion">
+                    <nav>
+                        <a href="categorias.html" class="">Categorias</a>
+                        <a href="productosAgricolas.html" class="">Productos</a>
+                        <a href="carritoCompras.html" class="">Mis compras</a>
+                        <a href="perfil.html" class="">perfil <span>
+                            <i class="fa-solid fa-user"></i>
+                        </span></a>
+                    </nav>
+                </div>
+            </div>
+            <div class="contenido-encabezado contenedor">
+                <div class="texto-encabezado-izquierdo">
+                    <h1>4.4
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </h1>
+                    <p>110 calificaciones</p>
+                    <div class="grafica">
+                        <canvas id="miGraficaCircular"></canvas>
+                    </div>
+                    <div class="titulo">
+                        <p>Calificación de características</p>
+                    </div>
+                    <div class="calificacion">
+                        <p>5 <i class="fa-solid fa-star"></i> Exelente</p>
+                        <p>4 <i class="fa-solid fa-star"></i> Bueno</p>
+                        <p>3 <i class="fa-solid fa-star"></i> Normal</p>
+                        <p>2 <i class="fa-solid fa-star"></i> Malo</p>
+                        <p>1 <i class="fa-solid fa-star"></i> Pesimo</p>
+                    </div>
+                    
+                </div>
+                <div class="texto-encabezado-derecho">
+                <h2>Manzanas</h2>
+                <div class="imge"><img class="imagen" src="./img/frutas/Manzana/Default_manzanas_0 (1).jpg" alt="">
+                    <img class="imagen" src="./img/frutas/Manzana/Default_manzanas_0.jpg" alt="">
+                    <img class="imagen" src="./img/frutas/Manzana/Default_una_manzana_0.jpg" alt="">
+                    <img class="imagen" src="./img/frutas/Manzana/descarga (1).jpeg" alt="">
+                </div>
+                <div class="usuarios">
+                    <p>
+                        <i class="fa-solid fa-user"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <div class="comentario">
+                            <p>Buen producto</p>
+                        </div>
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-user"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <div class="comentario">
+                            <p>Me gustan Mucho las fresas son muy frescas y huelen a campo</p>
+                        </div>
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-user"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <div class="comentario">
+                            <p>Me gustan Mucho las fresas.</p>
+                        </div>
+                    </p>
+                </div>
+                </div>
+                </div>
+            </div>
+        </header>
+        <script src="js/app2.js"></script>
+    </body>
+</html>

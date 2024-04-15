@@ -1,0 +1,253 @@
+:root {
+    --claro: #FFFFE9;
+    --verde: #114E38;
+    --verdeClaro: #DADFB9;
+    --amarilloVerde: #76A636;
+    --blanco: white;
+    --texto: 'Montserrat', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6 rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/*Estilos golbales*/
+
+h1,
+h2,
+h3 {
+    font-family: var(--texto);
+}
+
+p,
+a {
+    font-family: var(--texto);
+}
+
+.contenedor {
+    margin: 0 auto;
+    max-width: 120rem;
+    width: 95%;
+}
+
+/*Encabezado*/
+
+.encabezado {
+    background-image: url(../img/fondo\ amaneces\ 1.jpg);
+    height: 100vh;
+    min-height: 70rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    z-index: 1;
+}
+
+.encabezado::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: -1;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 10rem;
+    margin-left:8rem;
+    margin-top: 5rem;
+}
+
+.logo h2 {
+    font-size: 2.3rem;
+    color: var(--verdeClaro);
+    text-align: center;
+    margin-top: 5.5rem;
+}
+
+.logo h2 span {
+    font-size: 1.3rem;
+}
+
+/*Formulario*/
+
+.formulario{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30rem;
+    height: 42rem;
+    background: white;
+    border-radius: 1rem;
+    background: rgba(17, 78, 56, 0.5);
+}
+
+.formulario h1{
+    text-align: center;
+    padding: 0 0 20;
+    margin-top: 2rem;
+    color: var(--claro);
+}
+
+
+.formulario form{
+    padding: 0 4rem;
+    box-sizing: border-box;
+    margin-top: 3rem;
+}
+form .username{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    font-weight: 600;
+}
+
+.username input{
+    width: 100%;
+    padding: 0 5px;
+    height: 4rem;
+    font-size: 1.5rem;
+    border: none;
+    background: none;
+    outline: none;
+}
+.username label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: var(--claro);
+    font-size: 1.2rem;
+    pointer-events: none;
+}
+.username span::before{
+    content: '';
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--verde);
+}
+
+.username input:focus ~ label{
+    top: -5px;
+    color: var(--claro);
+}
+.username input:focus ~ span::before{
+    width: 100%;
+}
+
+form .contraseña{
+    margin-top: 1.8rem;
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    font-weight: 600;
+}
+
+.contraseña input{
+    width: 100%;
+    padding: 0 5px;
+    height: 4rem;
+    font-size: 1.5rem;
+    border: none;
+    background: none;
+    outline: none;
+}
+.contraseña label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: var(--claro);
+    font-size: 1.2rem;
+    pointer-events: none;
+}
+.contraseña span::before{
+    content: '';
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--claro);
+}
+
+.contraseña input:focus ~ label{
+    top: -5px;
+    color: var(--claro);
+}
+.contraseña input:focus ~ span::before{
+    width: 100%;
+}
+
+.recordar{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: var(--claro);
+}
+.recordar:hover{
+    color: var(--amarilloVerde);
+}
+
+/*Botones*/
+.iniciar{
+    font-size: 1.8rem;
+    width: 100%;
+    margin-top: 4rem;
+    border: none;
+    height: 3rem;
+    background-color: var(--amarilloVerde);
+    cursor: pointer;
+}
+
+.iniciar:hover{
+    background-color: var(--verde);
+}
+.registrarse{
+    font-size: 1.8rem;
+    width: 100%;
+    margin-top: 4rem;
+    border: none;
+    height: 3rem;
+    background-color: var(--amarilloVerde);
+    cursor: pointer;
+}
+
+.registrarse:hover{
+    background-color:var(--verde);
+}
+
+.no-underline {
+    text-decoration: none; 
+    color: white;
+}
+
+.no-underline1 {
+    text-decoration: none; 
+    color: white;
+}
+
+
+

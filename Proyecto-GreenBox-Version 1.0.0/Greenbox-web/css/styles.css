@@ -1,0 +1,264 @@
+:root{
+    --claro: #FFFFE9;
+    --verde: #114E38;
+    --verdeClaro: #DADFB9;
+    --amarilloVerde: #76A636;
+    --blanco:white;
+    --texto: 'Montserrat', sans-serif;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6 rem;
+}
+
+*,*::before, *::after{
+    box-sizing: inherit;
+}
+p{
+    font-size: 1rem;
+}
+
+/*Estilos golbales*/
+
+h1, h2, h3{
+    font-family: var(--texto);
+}
+
+p,a{
+    font-family: var(--texto);
+}
+.contenedor{
+    margin: 0 auto;
+    max-width: 120rem;
+    width: 95%;
+}
+
+/*encabezado*/
+
+.encabezado{
+    background-image: url('../img/fondo\ verduras.jpeg');
+    height: 100vh;
+    min-height: 70rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    z-index: 1;
+}
+
+.encabezado::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: -1;
+}
+.encabezado{
+    width: 100%;
+    height: 100%;
+}
+.contenido-navegacion{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--verde);
+    box-shadow: 10px 10px 16px -6px var(--verdeClaro);
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 60px;
+    margin-right: 12px;
+    margin-right: 10px;
+}
+.logo h2{
+    font-size: 1.8rem;
+    color: var(--verdeClaro);
+    text-align: center;
+    margin-right: 10px;
+}
+.logo h2 span{
+    font-size: 1.3rem;
+}
+.logo input{
+    color: var(--verdeClaro); 
+    font-size: 1.1rem;
+    border-radius: 5px;
+    color: var(--verde);
+    padding: 6.5px 80px;
+    margin-left: 5rem;
+    outline: 2px solid var(--verde);
+}
+
+input[type="submit"]{
+    background-color: var(--amarilloVerde);
+    border: none;
+    padding: 7px 20px;
+    margin: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+input[type="submit"]:hover{
+    background-color:var(--verdeClaro);
+}
+/*.hamburguesa span{
+    width: 5rem;
+    height: 1rem;
+    border: 3px solid var(--verde);
+    background-color: var(--amarilloVerde);
+    display: block;
+}*/
+
+/*.navegacion{
+    background-color: var(--verde);
+    position: absolute;
+    left: 0;
+    top: 70px;
+    width: 100%;
+    height: ;
+}
+.navegacion a{
+    display: block;
+    font-size: 2rem;
+    padding: 1.1rem;
+    color: var(--verdeClaro);
+    text-decoration: none;
+
+}
+@media(min-width: 768px){
+
+}*/
+
+.navegacion a{
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    color: var(--verdeClaro);
+    text-decoration: none;
+    transition: background-color all .3s ease-in-out;
+}
+
+.navegacion a:hover{
+    background-color: var(--amarilloVerde);
+    color: var(--verdeClaro);
+
+}
+
+.contenido-encabezado{
+    text-align: center;
+}
+.contenido-encabezado{
+    background-size: cover;
+    background-position: center;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.texto-encabezado h1{
+    font-size: 4rem;
+    color: var(--blanco);
+    padding-top: 22rem;
+}
+
+.texto-encabezado button{
+    font-size: 1.8rem;
+    padding: 10px 30px;
+	background: var(--verde);
+	border-radius: 10px;
+    cursor: pointer;
+    color: var(--blanco);
+    margin-left: 5px; 
+    margin-top: 15px;
+    align-items: center;
+}
+.texto-encabezado button:hover{
+    background-color: var(--amarilloVerde);
+}
+
+.text{
+    background-color: var(--claro);
+    background-size: cover;
+    background-position: center;
+    height: 320px;
+    justify-content: center;
+    text-align: center; 
+}
+
+.text p{
+    font-size: 3rem;
+    font-weight: bold;
+    color: black;
+    padding-top:14rem ;
+}
+
+/*Que hacemos*/
+
+.hacemos{
+    padding: 5rem; 
+    background-color: var(--claro);
+}
+
+.hacemos h2{
+        text-align: center;
+        padding-bottom: 9rem;
+        font-size: 5rem;
+        font-weight: 700;
+        color: black;
+}
+.conectamos{
+    color: black;
+    text-align: center;
+}
+
+.conectamos img{
+    width: 32rem; 
+    height: 20rem;
+    
+}
+
+.conectamos p{
+    font-size: 2rem;
+    
+}
+
+.contenido-hacemos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+/*final*/
+
+.btaf{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.botones {
+    margin: 0 10px; /* Margen horizontal entre los botones */
+    padding: 10px 20px; /* Relleno para darle espacio a los botones */
+}
+
+.botones button{
+    font-size: 1.5rem;
+    padding: 12px 14px;
+    background: var(--verde);
+    border-radius: 8px;
+    cursor: pointer;
+    color: var(--blanco);
+    margin-left: 10px;
+    margin-top: 4rem;
+}
+.botones button:hover{
+    background-color: var(--amarilloVerde);
+}

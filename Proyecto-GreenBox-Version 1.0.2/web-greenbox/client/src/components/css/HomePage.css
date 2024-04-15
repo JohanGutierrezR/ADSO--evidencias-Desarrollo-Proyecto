@@ -1,0 +1,267 @@
+/*Container HomePage*/
+.encabezadoHome {
+    background-image: url('../img/fondo verduras.jpeg'); 
+    min-height: 27rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    z-index: 1;
+}
+
+.encabezadoHome::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 20%; 
+    background-color: rgba(0, 0, 0, .5);
+    z-index: -1;
+    height: 100%; 
+}
+.encabezadoHome{
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.texto-encabezado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%; 
+}
+
+.texto-encabezado h1 {
+    font-size: 3.5rem;
+    color: var(--blanco);
+    transition: transform 0.3s ease-in-out;
+}
+.texto-encabezado h1:hover{
+   
+    color: var(--verdeClaro);
+    transform: scale(1.1);
+    cursor: pointer;
+   
+}
+
+/*Que hacemos*/
+
+.hacemos {
+    background-image: url('../img/fondo amanecer.png');  
+    height: 100vh;
+    min-height: 50rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    z-index: 1;
+}
+
+.hacemos h2 {
+    text-align: center;
+    padding-bottom: 4rem;
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--verde);
+}
+
+.conectamos {
+    text-align: center;
+    background-color: var(--verde);
+    width: 100%;
+    padding: 1.5rem;
+}
+
+.conectamos img {
+    display: block; 
+    margin: 0 auto; 
+    width: 30rem;
+    height: 15rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.conectamos img:hover {
+    transform: scale(1.1);
+}
+
+.conectamos p {
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    color: var(--claro);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.conectamos:hover p {
+    opacity: 1;
+}
+
+
+.contenido-hacemos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.productos {
+    background-image: url("../img/fondo con logo.jpg");
+    height: 100vh;
+    min-height: 60rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    z-index: 1;
+}
+
+.productos::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+
+.productos {
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    height: 25rem;
+}
+
+.productos .title {
+    color: var(--blanco);
+    padding-top: 2rem;
+    font-size: 2rem;
+}
+
+.title h1 {
+    font-weight: 600;
+    color: var(--blanco);
+}
+
+.productos .texto {
+    color: var(--blanco);
+    padding-bottom: 2rem;
+    margin: 1rem;
+
+}
+
+.texto p {
+    font-size: 2rem;
+    font-weight: 500;
+    padding-top: 2rem;
+}
+
+/*Imagenes contenedor*/
+
+.imge {
+    color: var(--blanco);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.imge img {
+    width: 100%;
+    width: 12rem;
+    height: 12rem;
+    margin-left: 1rem;
+    display: block; 
+    margin: 0 auto;
+
+}
+
+.imge img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+.imge p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1rem;
+    text-align: center;
+
+}
+
+.contenido-imagenes {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+
+}
+
+.imagenes1 {
+    padding-top: 3rem;
+}
+/*Lugares*/
+.lugares {
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    background-color: rgb(66, 99, 66);
+    
+}
+.lugares h2{
+    text-align: center;
+    color: var(--amarilloVerde);
+    font-size: 5rem;
+    margin-top: 2rem;
+    margin-bottom:  4rem;
+    background-position: center;
+    transition: transform 0.3s ease-in-out;
+}
+.lugares h2:hover{
+color: var(--verde);
+cursor: pointer;
+transform: scale(1.1);
+}
+
+.title1 h1 {
+    color: var(--verde);
+    font-size: 3rem;
+    font-weight: 700;
+    padding-top: 1rem;
+}
+
+.lugares .texto1 {
+    color: black;
+    margin: 1rem;
+
+}
+
+.texto1 p {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+/*Imagenes contenedor*/
+
+
+.img img {
+    margin: auto;
+    width: 90%;
+    transition: transform 0.3s ease-in-out;
+
+}
+.img img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.lugar1 {
+    padding-top: 3rem;
+}
