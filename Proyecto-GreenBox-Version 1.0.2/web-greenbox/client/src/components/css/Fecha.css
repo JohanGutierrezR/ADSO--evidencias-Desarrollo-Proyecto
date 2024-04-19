@@ -1,0 +1,163 @@
+
+/* Contenido izquierdo */
+.texto-encabezado-izquierdo {
+    grid-area: izquierdo; 
+    text-align: center;
+    padding-bottom: 18rem;
+    margin-left: 3rem;
+}
+
+/* Derecho */
+.texto-encabezado-derecho {
+    grid-area: derecho; 
+    margin-right: 25rem;
+    margin-bottom: 30rem;
+}
+
+/* Contenedor principal (Grid) */
+.fecha {
+    display: grid;
+    grid-template-columns: 2fr 2fr; 
+    grid-template-areas: 'izquierdo derecho'; 
+}
+
+
+.texto-encabezado-izquierdo p{
+    color: black;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 10rem;
+    transition: transform 0.3s ease-in-out;
+}
+.texto-encabezado-izquierdo p:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+.bta-calendario button{
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding: 1rem;
+    background: var(--verde);
+    cursor: pointer;
+    color: var(--blanco);
+    margin-right: 45rem;
+    margin-top: 5rem;
+}
+.bta-calendario button:hover{
+    background-color: var(--amarilloVerde);
+}
+
+/*Derecho*/
+
+.texto-encabezado-derecho h1{
+    font-size: 2rem;
+    text-align: left;
+    color: var(--amarilloVerde);
+}
+.texto-encabezado-derecho div {
+    margin-top: 6rem;
+    text-align: center;
+    width: 20rem;
+    height: 15rem;
+    margin-left: -13rem;
+}
+
+.texto-encabezado-derecho ol {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 0;
+    font-size: 2rem;
+}
+
+
+
+.day-name {
+    color: var(--verde);
+    text-align: center;
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+.color{
+    background-color: var(--amarilloVerde);
+}
+
+/* Contenido izquierdo */
+.texto-encabezado-izquierdo {
+    grid-area: izquierdo; 
+    text-align: center; 
+    padding-bottom: 5rem; 
+    margin-left: 6%; 
+    margin-top: 5%; 
+    padding-right:3rem ;
+}
+
+/* Derecho */
+.texto-encabezado-derecho {
+    grid-area: derecho; 
+    text-align: center; 
+    margin-right: -20%; 
+    margin-top: -40%;
+    
+}
+
+/* Contenedor principal (Grid) */
+.fecha {
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-areas: 
+        'izquierdo'
+        'derecho'; 
+}
+
+.texto-encabezado-izquierdo p {
+    color: black;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 3rem; 
+    transition: transform 0.3s ease-in-out;
+}
+
+.texto-encabezado-izquierdo p:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.texto-encabezado-derecho div {
+    margin-top: 3rem; 
+    text-align: center;
+    max-width: 20rem; 
+    height: 15rem;
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+
+
+/* Consulta de medios para adaptabilidad */
+
+@media only screen and (max-width: 768px) {
+    .fecha {
+        grid-template-columns: 1fr; 
+    }
+
+    .texto-encabezado-derecho h1{
+        text-align: center;
+        margin-right: -50%; 
+        font-size: 2rem;
+        margin-top: 8rem;
+    }
+
+    .bta-calendario button,
+    .texto-encabezado-derecho div {
+        margin-right: 0; 
+        margin-left: 0; 
+    }
+    .texto-encabezado-derecho li{
+        font-size: 1.2rem;
+    }
+}

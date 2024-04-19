@@ -1,0 +1,157 @@
+/*Contenido*/
+
+.categorias {
+    margin: -4rem;
+    background-image: url('../img/fondo amanecer.png');
+    height: 100vh;
+    min-height: 50rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    z-index: 1;
+}
+
+.categorias::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+
+.categorias{
+    color: var(--amarilloVerde);
+    padding-bottom: 5rem;
+    font-size: 3rem;
+    text-align: center;
+}
+.categorias h1{
+    font-weight: 600;
+    padding-bottom: 2rem;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    transition: background-color all .3s ease-in-out;
+}
+.categorias h1:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.botones-categorias{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.botones-categorias {
+    margin: 0 10px;
+    padding: 10px 20px; 
+}
+
+.botones-categorias button{
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 1.2rem;
+    background: var(--amarilloVerde);
+    cursor: pointer;
+    color: var(--blanco);
+    margin-bottom: 5rem;
+    border-radius: 1rem;
+    transition: background-color all .3s ease-in-out;
+}
+.botones-categorias button:hover{
+    background-color: var(--verde);
+    transform: scale(1.1);
+}
+
+.botones1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+.botones1 {
+    margin: 0 10px; 
+    padding: 10px 20px; 
+}
+
+.botones1 button{
+    font-size: 2.5rem;
+    font-weight: 800;
+    padding: 1.8rem;
+    background: var(--amarilloVerde);
+    cursor: pointer;
+    color: var(--blanco);
+    align-items: center
+}
+.botones1 button:hover{
+    background-color: var(--verde);
+}
+
+  
+/* Adaptaciones para Celulares y Tablets */
+@media only screen and (max-width: 992px) {
+
+    .categorias h1 {
+        font-weight: 600;
+        padding: 0 auto;
+        transition: background-color all .3s ease-in-out;
+        padding-bottom: 2rem;
+    }
+
+    .categorias h1:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+    .botones-categorias {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center; /* Centra los botones */
+        padding: 0px;
+    }
+
+    .botones-categorias button {
+        font-size: 2rem;
+        font-weight: 700;
+        padding: 0.5rem;
+        background: var(--amarilloVerde);
+        cursor: pointer;
+        color: var(--blanco);
+        margin-bottom: 1rem; /* Espacio entre botones */
+        border-radius: 1rem;
+        transition: background-color all .3s ease-in-out;
+    }
+
+    .botones-categorias button:hover {
+        background-color: var(--verde);
+        transform: scale(1.1);
+    }
+
+    .botones1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center; /* Centra los botones */
+    }
+
+    .botones1 button {
+        font-size: 2rem;
+        font-weight: 800;
+        padding: 1.8rem;
+        background: var(--amarilloVerde);
+        cursor: pointer;
+        color: var(--blanco);
+        margin-bottom: 1rem; /* Espacio entre botones */
+        border-radius: 1rem;
+        transition: background-color all .3s ease-in-out;
+    }
+
+    .botones1 button:hover {
+        background-color: var(--verde);
+    }
+}

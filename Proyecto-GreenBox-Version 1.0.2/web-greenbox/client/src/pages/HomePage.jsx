@@ -68,7 +68,7 @@ function HomePage() {
           </div>
         </div>
         <div className="imagenes">
-          <div className="contenido-imagenes contenedor">
+          <div className="contenido-imagenes">
             <div className="imge">
               <img className="imagen1" src={img} alt="Avena" />
 

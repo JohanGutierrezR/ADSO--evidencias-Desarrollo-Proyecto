@@ -1,0 +1,199 @@
+/* Agrega estos estilos al archivo ProductosGeneral.css */
+
+.contenido-frutas {
+    display: flex;
+    margin: auto;
+  }
+  
+  .textoEncabezadoIzquierdo {
+    width: 30%;
+  }
+
+  .textoEncabezadoIzquierdo h1{
+    margin: 1rem;
+    color: var(--verde);
+   font-weight: 600;
+   font-size: 2rem;
+  }
+  
+  .color30 {
+    background-color: var(--verdeClaro); 
+    width: 100%;
+    height: 100%;
+    float: left; 
+  }
+  
+  .culm {
+    font-weight: 600;
+    color: var(--verde);
+  }
+
+.culm p{
+    margin: 1rem;
+    font-size: 1.5rem;
+    
+  }
+  .culm a{
+    font-size: 1.3rem;
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--verde);
+  }
+
+  .culm1 p{
+    margin: 1rem;
+    font-size: 1rem;
+    margin-left: 1.3rem;
+    color: black;
+  }
+
+  
+  .textoEncabezadoIzquierdo .linea p{
+    width: 80%;
+    text-align: center;
+    color: rgba(105, 102, 102, 0.932); 
+  }
+  
+  .img1,
+  .img2 {
+    width: 70%;
+  }
+  
+  .img-frutas {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+    text-align: center; /* Alinea el texto */
+  }
+  
+  .img-frutas img {
+    margin-top: 2rem;
+    height: 15rem;
+    width: 15rem;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+.img-frutas img:hover{
+   
+    transform: scale(1.1);
+    cursor: pointer;
+}
+  .img-frutas {
+    text-align: center;
+  }
+  
+  .img-frutas p {
+    font-weight: bold;
+    color: black; 
+    font-size: 1.2rem;
+    margin: 0.5rem;
+  }
+  .img-frutas button {
+    background-color: var(--verde);
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .img-frutas button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+/* Estilos para el contenedor del carrito de compras */
+.carrito-compras {
+  position: fixed;
+  top: 4.7rem;
+  right: 0;
+  background-color: var(--verdeClaro);
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  color: var(--verde);
+  transition: width 0.3s ease; /* Agrega transición suave para el cambio de ancho */
+}
+
+/* Estilos para el botón de mostrar/ocultar carrito */
+.carrito-compras button {
+  background-color: var(--verde);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.carrito-compras button:hover {
+  background-color: #45a049;
+}
+
+/* Estilos para la lista de elementos en el carrito */
+.carrito-compras ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.carrito-compras li {
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: stretch;
+  align-items: center;
+}
+
+/* Estilos para los botones dentro de los elementos del carrito */
+.carrito-compras li button {
+  background-color: red;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.carrito-compras li button:hover {
+  background-color: #e04111;
+}
+
+/* Estilos para el total del carrito */
+.carrito-compras p {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Estilos para el carrito de compras cuando está expandido */
+.carrito-compras.expandido {
+  width: 20rem; /* Ancho expandido */
+}
+
+@media only screen and (max-width: 768px) {
+    .contenido-frutas {
+      flex-direction: column-reverse; /* Invierte la dirección de los elementos */
+    }
+  
+    .textoEncabezadoIzquierdo {
+      width: 100%;
+    }
+  
+    .img1,
+    .img2 {
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .carrito-compras {
+      top: auto; /* Restaura la posición predeterminada */
+      bottom: 0; /* Posiciona el carrito en la parte inferior */
+      width: 100%; /* Ancho completo en dispositivos más pequeños */
+    }
+  
+    .carrito-compras.expandido {
+      width: 90%; /* Ancho expandido en dispositivos más pequeños */
+    }
+  }
+  
